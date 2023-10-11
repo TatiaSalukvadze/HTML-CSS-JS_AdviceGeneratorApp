@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #202733;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+.main {
+  width: 343px;
+  min-height: 315px;
+  border-radius: 10px;
+  background: #313a48;
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.id {
+  color: #53ffaa;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3.457px;
+  padding-top: 40px;
+}
+#advice {
+  padding-top: 24px;
+  color: #cee3e9;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.257px;
+  width: 295px;
+}
+.divider {
+  margin-top: 24px;
+  margin-bottom: 64px;
+  width: 295px;
+  height: 16px;
+  background-image: url("./images/pattern-divider-mobile.svg");
+}
+button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+button:hover{
+    box-shadow: 0px 0px 40px 0px #53FFAA;
+    cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .main {
+    width: 540px;
+    min-height: 332px;
+  }
+
+  .id {
+    padding-top: 48px;
+    font-size: 13px;
+    letter-spacing: 4.086px;
+  }
+
+  #advice {
+    padding-top: 24px;
+    font-size: 28px;
+    letter-spacing: -0.3px;
+    width: 444px;
+  }
+
+  .divider {
+    margin-top: 40px;
+    margin-bottom: 72px;
+    width: 444px;
+    height: 16px;
+    background-image: url("./images/pattern-divider-desktop.svg");
+  }
+}
